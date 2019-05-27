@@ -24,3 +24,14 @@
 
     # not used
     - '#7faaff' # periwinkle
+# Alternate Light Theme
+- name: light
+  colors:
+  - '#ffffff'
+  - '#2b2c31'
+  - '#007289'
+  - '#002e89'
+  - '#170089'
+  - '#5b0089'
+  - '#890072'
+  - '#89002d'
