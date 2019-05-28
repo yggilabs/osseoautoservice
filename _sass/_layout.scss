@@ -6,7 +6,7 @@
   --site_grid-template-columns: 1fr var(--site_grid-nav-width) calc(var(--env_breakpoint) - var(--site_grid-nav-width)) 1fr;
   --site_grid-template-areas:
     ". header header ."
-    ". nav main ."
+    ". aside main ."
     ". footer footer .";
 
   --nav_grid-template-rows: auto auto auto 1fr;
@@ -30,7 +30,7 @@
     --site_grid-template-columns: 1fr;
     --site_grid-template-areas:
       "header"
-      "nav"
+      "aside"
       "main"
       "footer";
 
@@ -61,8 +61,8 @@
   grid-area: header;
 }
 
-.site__nav {
-  grid-area: nav;
+.site__aside {
+  grid-area: aside;
 }
 
 .site__main {
