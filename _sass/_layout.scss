@@ -1,0 +1,112 @@
+:root {
+  --env_breakpoint: #{$env_breakpoint};
+  
+  --site_grid-nav-width: 400px;
+  --site_grid-template-rows: auto auto auto;
+  --site_grid-template-columns: 1fr var(--site_grid-nav-width) calc(var(--env_breakpoint) - var(--site_grid-nav-width)) 1fr;
+  --site_grid-template-areas:
+    ". header header ."
+    ". nav main ."
+    ". footer footer .";
+
+  --nav_grid-template-rows: auto auto auto 1fr;
+  --nav_grid-template-columns: 1fr;
+  --nav_grid-template-areas:
+    "title"
+    "docs"
+    "links";
+
+  --main_grid-template-rows: auto auto auto 1fr;
+  --main_grid-template-columns: auto 1fr auto;
+  --main_grid-template-areas:
+    "title title title"
+    "content content content"
+    "prev . next";
+}
+
+@media (max-width: $env_breakpoint) {
+  :root {
+    --site_grid-template-rows: auto auto auto auto;
+    --site_grid-template-columns: 1fr;
+    --site_grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+
+    --nav_grid-template-rows: auto auto auto;
+    --nav_grid-template-columns: 1fr;
+    --nav_grid-template-areas:
+      "title"
+      "docs"
+      "links";
+    --main_grid-template-rows: auto auto auto 1fr;
+    --main_grid-template-columns: 1fr;
+    --main_grid-template-areas:
+      "prev"
+      "title"
+      "content"
+      "next";
+  }
+}
+
+.site {
+  display: grid;
+  grid-template-rows: var(--site_grid-template-rows);
+  grid-template-columns: var(--site_grid-template-columns);
+  grid-template-areas: var(--site_grid-template-areas);
+}
+
+.site__header {
+  grid-area: header;
+}
+
+.site__nav {
+  grid-area: nav;
+}
+
+.site__main {
+  grid-area: main;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: var(--nav_grid-template-rows);
+  grid-template-columns: var(--nav_grid-template-columns);
+  grid-template-areas: var(--nav_grid-template-areas);
+}
+
+.nav__title {
+  grid-area: title;
+}
+
+.nav__docs {
+  grid-area: docs;
+}
+
+.nav__links {
+  grid-area: links;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: var(--main_grid-template-rows);
+  grid-template-columns: var(--main_grid-template-columns);
+  grid-template-areas: var(--main_grid-template-areas);
+}
+
+.main__title {
+  grid-area: title;
+}
+
+.main__content {
+  grid-area: content;
+}
+
+.main__next {
+  grid-area: next;
+}
+
+.main__prev {
+  grid-area: prev;
+}
