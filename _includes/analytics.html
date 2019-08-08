@@ -1,3 +1,5 @@
+<!--
+
 <amp-analytics type="gtag" data-credentials="include">
   <script type="application/json">
     {
@@ -18,5 +20,22 @@
         }
       }
     }
+  </script>
+</amp-analytics>
+
+-->
+<amp-analytics type="googleanalytics">
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "UA-116382541-6"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
   </script>
 </amp-analytics>
