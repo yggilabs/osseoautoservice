@@ -10,14 +10,7 @@
         }
       },
       "triggers": {
-        "trackAnchorClicks": {
-          "on": "click",
-          "selector": "a",
-          "request": "event",
-          "vars": {
-            "eventId": "clickOnAnyAnchor"
-          }
-        }
+        
       }
     }
   </script>
@@ -34,6 +27,14 @@
       "trackPageview": {
         "on": "visible",
         "request": "pageview"
+      },
+      "trackAnchorClicks": {
+        "on": "click",
+        "selector": "a",
+        "request": "event",
+        "vars": {
+          "eventId": "clickOnAnyAnchor"
+        }
       }
     }
   }
