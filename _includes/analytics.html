@@ -9,9 +9,11 @@
       },
       "triggers": {
         "anchorClicks": {
-          "on": "click",
           "selector": "a",
-          "request": "event"        
+          "on": "click",
+          "vars": {
+            "event_name": "click"
+          }
         }
       }
     }
