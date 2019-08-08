@@ -10,12 +10,12 @@
   --site__footer_border-top-width: 1px;
   --site__footer_border-top-style: solid;
   --site__footer_padding-top: 24px;
-  --site__footer_margin: 0 128px 128px 64px;
+  --site__footer_margin: 0 0 128px 0;
   --site__footer_text-align: right;
 
   --site__nav_padding: 0 64px;
-  --site__main_margin: 0 64px;
-  --site__main_padding: 64px;
+  --site__main_margin: 0;
+  --site__main_padding: 64px 0;
 
   --main__h_color: var(--color__highlight);
 
