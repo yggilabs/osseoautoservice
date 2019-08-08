@@ -8,12 +8,12 @@
         }
       },
       "triggers": {
-        "button": {
-          "selector": "a",
+        "trackAnchorClicks": {
           "on": "click",
+          "selector": "a",
+          "request": "event",
           "vars": {
-            "event_name": "login",
-            "method": "Google"
+            "eventId": "clickOnAnyAnchor"
           }
         }
       }
