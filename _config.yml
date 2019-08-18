@@ -1,6 +1,6 @@
 name: Osseo Auto Service
 short_name: Car Repair
-theme_name: light
+theme_name: default
 plugins:
   - jekyll-seo-tag
 remote_theme: yggilabs/boilerplate
