@@ -8,4 +8,4 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/default-card.png
+      layout: page
