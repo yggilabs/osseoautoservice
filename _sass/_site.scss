@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Eurostile Ext";
-  src: url("/assets/fonts/eurostile_extended_black.ttf");
+  font-family: "Michroma";
+  src: url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
 }
 
 .site {
@@ -14,7 +14,7 @@
 body, .site, .site * {
   background-color: var(--color__background);
   color: var(--color__foreground);
-  font-family: "Eurostile Ext", sans-serif;
+  font-family: 'Michroma', sans-serif;
 }
 
 .site a {
