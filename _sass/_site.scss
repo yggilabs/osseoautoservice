@@ -1,14 +1,20 @@
+@font-face {
+  font-family: "Eurostile Ext";
+  src: url("/assets/fonts/eurostile_extended_black.ttf");
+}
+
 .site {
   margin: var(--site_margin);
   padding: var(--site_padding);
   max-width: var(--site_max-width);
   min-width: var(--site_min-width);
   width: var(--site_width);
-}
+}  
 
 body, .site, .site * {
   background-color: var(--color__background);
   color: var(--color__foreground);
+  font-family: "Eurostile Ext", sans-serif;
 }
 
 .site a {
