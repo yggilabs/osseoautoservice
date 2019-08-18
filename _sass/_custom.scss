@@ -1,3 +1,7 @@
+.markdown-body img {
+  background-color: initial;
+}
+
 :root {
   --env_breakpoint: #{$env_breakpoint}  ;
 
