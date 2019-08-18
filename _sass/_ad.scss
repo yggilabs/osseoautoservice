@@ -7,14 +7,16 @@
 .ad {
   display: grid;
   width: 200px;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
   grid-template-rows: var(--ad_grid-template-rows);
   grid-template-columns: var(--ad_grid-template-columns);
   grid-template-areas: var(--ad_grid-template-areas);
 }
 
 .ad {
-  background-color: #f47721;
   color: #fff
 }
 
@@ -24,4 +26,5 @@
 
 .ad__text {
   grid-area: text;
+  text-align: center;
 }
