@@ -1,5 +1,13 @@
+:root {
+  --ad_grid-template-rows: auto auto
+  --ad_grid-template-columns: 1fr;
+  --ad_grid-template-areas: "logo" "text"
+}
+
 .ad {
   display: grid;
+  width: 200px;
+  margin: 0 auto;
   grid-template-rows: var(--ad_grid-template-rows);
   grid-template-columns: var(--ad_grid-template-columns);
   grid-template-areas: var(--ad_grid-template-areas);
