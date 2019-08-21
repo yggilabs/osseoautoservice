@@ -32,7 +32,7 @@
   position: relative;
 }
 
-.header__logo > amp-img[layout=fit] > img {
+.header__logo > amp-img[layout="fit"] > img {
     object-fit: contain;
     object-position: left;
 }
