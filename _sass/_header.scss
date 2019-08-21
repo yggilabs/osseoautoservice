@@ -31,6 +31,10 @@
   grid-area: logo;
 }
 
+.header__logo amp-img {
+  object-fit: contain; 
+}
+
 .header__phone {
   grid-area: phone;
 }
