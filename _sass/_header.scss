@@ -32,8 +32,9 @@
   position: relative;
 }
 
-.header__logo amp-img {
-  object-fit: contain; 
+.header__logo > amp-img[layout=fit] > img {
+    object-fit: contain;
+    object-position: left;
 }
 
 .header__phone {
