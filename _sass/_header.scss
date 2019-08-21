@@ -5,7 +5,7 @@
   --header_grid-template-columns: 33% 1fr auto;
   --header_grid-template-areas:
     "logo . phone"
-    "logo . directions";
+    "logo . address";
 }
 
 @media (max-width: $env_breakpoint) {
