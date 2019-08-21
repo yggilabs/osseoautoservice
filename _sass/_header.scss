@@ -20,6 +20,7 @@
 }
 
 .header {
+  position:relative;
   display: grid;
   grid-template-rows: var(--header_grid-template-rows);
   grid-template-columns: var(--header_grid-template-columns);
