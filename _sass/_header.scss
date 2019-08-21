@@ -1,0 +1,39 @@
+:root {
+  --env_breakpoint: #{$env_breakpoint};
+  
+  --header_grid-template-rows: 33% 1fr auto;
+  --header_grid-template-columns: 1fr 1fr;
+  --header_grid-template-areas:
+    "logo phone"
+    "logo directions";
+}
+
+@media (max-width: $env_breakpoint) {
+  :root {
+    --header_grid-template-rows: auto auto auto;
+    --header_grid-template-columns: 1fr;
+    --header_grid-template-areas:
+      "logo"
+      "phone"
+      "address";
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-rows: var(--site__header_grid-template-rows);
+  grid-template-columns: var(--site__header_grid-template-columns);
+  grid-template-areas: var(--site__header_grid-template-areas);
+}
+
+.header__logo {
+  grid-area: logo;
+}
+
+.header__phone {
+  grid-area: phone;
+}
+
+.header__address {
+  grid-area: address;
+}
