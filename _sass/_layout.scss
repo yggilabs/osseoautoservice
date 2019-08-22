@@ -12,10 +12,11 @@
 
 @media (max-width: $env_breakpoint) {
   :root {
-    --site_grid-template-rows: auto auto auto;
+    --site_grid-template-rows: auto auto auto auto;
     --site_grid-template-columns: 1fr;
     --site_grid-template-areas:
       "header"
+      "splash"
       "main"
       "footer";
   }
@@ -26,6 +27,10 @@
   grid-template-rows: var(--site_grid-template-rows);
   grid-template-columns: var(--site_grid-template-columns);
   grid-template-areas: var(--site_grid-template-areas);
+}
+
+.site__splash {
+  grid-area: splash;  
 }
 
 .site__header {
