@@ -8,10 +8,10 @@
     - '#ffffff' # white
 
     # primary links
-    - '#eaff7f' # yellow-green
+    - '#19468d' # yellow-green
 
     # rules and nav markers
-    - '#aaff7f' # green
+    - '#f47721' # green
 
     # **strong** __text__
     - '#7fff94' # light-green
