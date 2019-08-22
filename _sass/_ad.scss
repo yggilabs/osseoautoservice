@@ -15,6 +15,7 @@
   grid-template-rows: var(--ad_grid-template-rows);
   grid-template-columns: var(--ad_grid-template-columns);
   grid-template-areas: var(--ad_grid-template-areas);
+  grid-gap: 2em;
 }
 
 .ad {
