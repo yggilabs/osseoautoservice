@@ -10,7 +10,7 @@
 
 @media (max-width: $env_breakpoint) {
   :root {
-    --header_grid-template-rows: auto auto auto;
+    --header_grid-template-rows: minmax(48px,auto) auto auto;
     --header_grid-template-columns: 1fr;
     --header_grid-template-areas:
       "logo"
