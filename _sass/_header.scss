@@ -22,6 +22,7 @@
 .header {
   position:relative;
   display: grid;
+  background-color: var(--color__background);
   grid-template-rows: var(--header_grid-template-rows);
   grid-template-columns: var(--header_grid-template-columns);
   grid-template-areas: var(--header_grid-template-areas);
