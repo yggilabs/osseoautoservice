@@ -25,6 +25,10 @@ layout: page
   grid-area: logo;
 }
   
+.landing__logo > amp-img[layout="fill"] > img {
+  object-fit: contain;
+}
+  
 .landing__call {
   grid-area: call;
 }
@@ -48,7 +52,7 @@ layout: page
 
 <aside class="site__landing landing">
   <div class="landing__wrapper">
-    <amp-img class="landing__logo"></amp-img>
+    <amp-img layout="fill" class="landing__logo"></amp-img>
     <a class="landing__call" href="">call</a>
     <a class="landing__directions" href="">go</a>
   </div>
