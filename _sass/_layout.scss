@@ -32,6 +32,8 @@
 .site__splash {
   grid-area: splash;  
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .site__header {
