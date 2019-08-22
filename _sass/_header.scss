@@ -27,6 +27,12 @@
   grid-template-areas: var(--header_grid-template-areas);
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
 .header__logo {
   grid-area: logo;
   position: relative;
