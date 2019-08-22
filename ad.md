@@ -2,5 +2,9 @@
 layout: ad
 image: assets/images/C&JMark-Wh72.png
 ---
-{% include phone.html %}
-{% include address.html %}
+
+<a href="tel:7634252423">Call Us</a>
+
+or 
+
+<a class="" href="https://www.google.com/maps/dir/?api=1&amp;destination=CanJ%20Auto%20repair&amp;destination_place_id=ChIJ3crk9Uo4s1IRrxPfIPo7-YQ&amp;travelmode=driving">Stop In</a>
