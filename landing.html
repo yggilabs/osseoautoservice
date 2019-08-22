@@ -2,11 +2,43 @@
 layout: page
 ---
 <style>
+.site__landing {
+  grid-area: landing;
+  position: relative;
+}
+  
+.landing__wrapper {
+  display: grid;
+  width: 67%;
+  position: relative;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  grid-template-areas: 
+    "logo logo logo"
+    "call . directions"
+}
+  
+.landing__logo {
+  grid-area: logo;
+}
+  
+.landing__call {
+  grid-area: call;
+}
+  
+.landing__directions {
+  grid-area: directions;
+}
+  
 @media (max-width: $env_breakpoint) {
   :root {
-    --site_grid-template-rows: auto auto auto;
+    --site_grid-template-rows: 100vh auto auto auto;
     --site_grid-template-columns: 1fr;
     --site_grid-template-areas:
+      "landing"
       "header"
       "main"
       "footer";
@@ -15,9 +47,11 @@ layout: page
 </style>
 
 <aside class="site__landing landing">
-  <amp-img></amp-img>
-  <a href="">call</a>
-  <a href="">go</a>
+  <div class="landing__wrapper">
+    <amp-img class="landing__logo"></amp-img>
+    <a class="landing__call" href="">call</a>
+    <a class="landing__directions" href="">go</a>
+  </div>
 </aside>
 <main class="site__main main">
 <p>this is some copy. What it says is meaningless.this is some copy. What it says is meaningless.this is some copy. What it says is meaningless.</p>
