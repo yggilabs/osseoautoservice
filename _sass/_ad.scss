@@ -41,11 +41,14 @@
 }
 
 .site__splash::after {
-  content: 'down_arrow';
+  content: 'unfold_more';
   font-family: 'Material Icons';
   display: block;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);  
+  font-size: 24px;
+  color: #818b94;
+  word-wrap: normal;
 }
