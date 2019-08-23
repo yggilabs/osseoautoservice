@@ -1,5 +1,5 @@
 ---
-layout: ad
+layout: dev
 image: assets/images/C&JAuto-StackRev72.png
 ---
 
