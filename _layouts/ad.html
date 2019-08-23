@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="site markdown-body">
+<div class="site {% if page.theme %}site--{{ page.theme}} {% endif %}markdown-body">
   <aside class="site__splash splash splash--{{ page.theme }}">
       <div class="ad">
         <amp-img class="ad__logo" layout="responsive" width="252" height="234" src="{{ page.image }}"></amp-img>
