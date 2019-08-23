@@ -9,14 +9,15 @@
   width: var(--site_width);
 }  
 
-body, .site {
+
+.site {
   background-color: var(--color__background);
   color: var(--color__foreground);
   font-family: 'Michroma', sans-serif;
 }
 
-.script {
-  font-family: 'Dancing Script', cursive;
+.site.site--trusted {
+  background-color: var(--color__trusted);
 }
 
 .site a {
