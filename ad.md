@@ -1,6 +1,6 @@
 ---
 layout: ad
-image: assets/images/C&JMark-Wh72.png
+image: assets/images/C&JAuto-StackWh72.png
 theme: trusted
 ---
 
