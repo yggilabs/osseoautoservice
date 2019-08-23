@@ -12,6 +12,8 @@ We are a customer focused repair shop serving the northwest metro located in the
 
 > Always good customer service and they do excellent work! - Google Review
 
-## Contact Us
+## Connect with us
 
 {% include contact.html %}
+
+[facebook](https://www.facebook.com/CJ-Auto-114123749942783/)
