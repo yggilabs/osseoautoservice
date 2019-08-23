@@ -9,11 +9,16 @@
   width: var(--site_width);
 }  
 
-
 .site {
   background-color: var(--color__background);
   color: var(--color__foreground);
   font-family: 'Michroma', sans-serif;
+}
+
+.site.site--light {
+  background-color: var(--color__foreground);
+  color: var(--color__background);
+ 
 }
 
 .site.site--trusted {
