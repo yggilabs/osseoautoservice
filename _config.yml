@@ -1,6 +1,7 @@
 name: C&J Auto
 short_name: Car Repair
 theme_name: default
+env_breakpoint: 768px
 plugins:
   - jekyll-seo-tag
 remote_theme: yggilabs/boilerplate
