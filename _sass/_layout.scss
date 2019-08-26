@@ -1,4 +1,6 @@
 :root {
+  --site__header_display: initial;
+  --site__splash_display: none;
   --env_breakpoint: #{$env_breakpoint};
   
   --site_grid-template-rows: auto auto auto;
@@ -12,6 +14,8 @@
 
 @media (max-width: $env_breakpoint) {
   :root {
+    --site__header_display: none;
+    --site__splash_display: initial;
     --site_grid-template-rows: auto auto auto auto;
     --site_grid-template-columns: 1fr;
     --site_grid-template-areas:
@@ -29,7 +33,8 @@
 }
 
 .site__splash {
-  grid-area: splash;  
+  grid-area: splash; 
+  display: var(--site__splash_display);
   min-height: 100vh;
   overflow: hidden;
   position: relative;
@@ -37,6 +42,7 @@
 
 .site__header {
   grid-area: header;
+  display: var(--site__header_display);
 }
 
 .site__main {
