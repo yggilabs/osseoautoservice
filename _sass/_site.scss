@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Michroma|Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
 
-.site {
-  margin: var(--site_margin);
-  padding: var(--site_padding);
-  max-width: var(--site_max-width);
-  min-width: var(--site_min-width);
-  width: var(--site_width);
-}  
-
-.site {
+body {
   background-color: var(--color__background);
   color: var(--color__foreground);
   font-family: 'Open Sans', sans-serif;
@@ -19,41 +11,28 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Michroma', sans-serif;
 }
 
-.site.site--light {
-  background-color: var(--color__foreground);
-  color: var(--color__background);
- 
-}
-
-.site.site--trusted {
-  background-color: var(--color__trusted);
-}
+.site {
+  margin: var(--site_margin);
+  padding: var(--site_padding);
+  max-width: var(--site_max-width);
+  min-width: var(--site_min-width);
+  width: var(--site_width);
+}  
 
 .site a {
-  color: var(--color__highlight);
+  color: var(--color__link);
 }
 
-.site .keyword, .site .keyword:hover {
-  text-decoration: underline dotted var(--color__8, --color__foreground);
-  color: var(--color__foreground);
+.site blockquote {
+ color: var(--color__quote);
 }
 
-.site strong, .site strong > .keyword, .site strong > .keyword:hover {
-  color: var(--color__5, --color__lowlight);
-}
-
-.site em, .site em > .keyword, .site em > .keyword:hover {
-  color: var(--color__6, --color__5, --color__lowlight);
-}
-
-.site strong > em, .site strong > em > .keyword, .site strong > em > .keyword:hover {
-  color: var(--color__7, --color__5, --color__lowlight);
+.site strong, .site strong > .keyword, .site strong > .keyword:hover {  
 }
 
 .site h1, .site h2, .site h3, .site .site__footer {
-  border-color: var(--color__lowlight);
+  border-color: var(--color__rule);
 }
-
 
 /* BEM is cool but there are other cool things out there too I guess */
 .site .site__footer {
@@ -63,10 +42,6 @@ h1,h2,h3,h4,h5,h6 {
   grid-area: footer;
   text-align: var(--site__footer_text-align);
   margin: var(--site__footer_margin);
-}
-
-.site .site__nav {
-  padding: var(--site__nav_padding);
 }
 
 .site .site__main {
