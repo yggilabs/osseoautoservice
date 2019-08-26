@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap');
 
 body {
-  background-color: var(--color__background);
-  color: var(--color__text);
+  background-color: var(--color__background);  
   font-family: 'Open Sans', sans-serif;
+}
+
+.markdown-body {
+  color: var(--color__text);
 }
 
 h1,h2,h3,h4,h5,h6 {
