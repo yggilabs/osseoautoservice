@@ -7,11 +7,9 @@ We are a customer focused repair shop serving the northwest metro located in the
 
 {% include instagram.html %}
 
-{% include facebook.html %}
-
 > Always good customer service and they do excellent work! - Google Review
 
-## Stay in touch
+**Stay in touch**
 
 [248 Central Ave, Osseo, MN 55369](https://www.google.com/maps/dir/?api=1&destination=CanJ%20Auto%20repair&destination_place_id=ChIJ3crk9Uo4s1IRrxPfIPo7-YQ&travelmode=driving)
 
