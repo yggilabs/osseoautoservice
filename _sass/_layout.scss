@@ -3,7 +3,7 @@
   --site__splash_display: none;
   --env_breakpoint: #{$env_breakpoint};
   
-  --site_grid-template-rows: auto auto auto;
+  --site_grid-template-rows: 128px auto auto;
   --site_grid-template-columns: 1fr var(--env_breakpoint) 1fr;
   --site_grid-template-areas:
     ". header ."
