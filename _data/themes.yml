@@ -8,30 +8,10 @@
     - '#ffffff' # white
 
     # primary links
-    - '#19468d' # yellow-green
+    - '#eaff7f' # yellow-green
 
     # rules and nav markers
-    - '#f47721' # green
+    - '#ffffff' # green
 
-    # **strong** __text__
-    - '#7fff94' # light-green
-
-    # *emphasised* _text_
-    - '#7fffd4' # cyan
-
-    # ***strong*** __*emphasised*__ **_text_**
-    - '#7feaff' # light-blue
-
-    # not used
-    - '#7faaff' # periwinkle
-# Alternate Light Theme
-- name: light
-  colors:
-  - '#ffffff'
-  - '#2b2c31'
-  - '#007289'
-  - '#002e89'
-  - '#170089'
-  - '#5b0089'
-  - '#890072'
-  - '#89002d'
+    # block quote
+    - '#cfd1v7' # light-green    
