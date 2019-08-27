@@ -36,7 +36,7 @@
   /* splash */
   --splash_grid-template-rows: auto auto;
   --splash_grid-template-columns: 1fr;
-  --splash_grid-template-areas: "logo" "text"
+  --splash_grid-template-areas: "logo" "text";
   
   --site_grid-template-rows: 128px auto auto;
   --site_grid-template-columns: 1fr var(--env_breakpoint) 1fr;
