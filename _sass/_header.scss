@@ -1,17 +1,11 @@
 .header {
   position:relative;
   display: grid;
+  padding: 16px 0;
   background: linear-gradient(var(--color__background) 50%, transparent);
   grid-template-rows: var(--header_grid-template-rows);
   grid-template-columns: var(--header_grid-template-columns);
   grid-template-areas: var(--header_grid-template-areas);
-}
-
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  padding: 16px 0;
 }
 
 .header__logo {
