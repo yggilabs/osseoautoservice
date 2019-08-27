@@ -1,9 +1,3 @@
-:root {
-  --ad_grid-template-rows: auto auto;
-  --ad_grid-template-columns: 1fr;
-  --ad_grid-template-areas: "logo" "text"
-}
-
 .splash {
   display: grid;
   width: 50%;
