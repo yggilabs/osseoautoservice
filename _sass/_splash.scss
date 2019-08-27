@@ -4,10 +4,11 @@
   --ad_grid-template-areas: "logo" "text"
 }
 
-.ad {
+.splash {
   display: grid;
   width: 50%;
   max-width: 300px;
+  color: #ffffff;
   position: relative;
   left: 50vw;
   top: 50vh;
@@ -19,19 +20,15 @@
   grid-gap: 2em;
 }
 
-.ad {
-  color: #fff
-}
-
-.ad__logo {
+.splash__logo {
   grid-area: logo;
 }
 
-.ad__logo > amp-img[layout="fill"] > img {
+.splash__logo > amp-img[layout="fill"] > img {
   object-fit: contain;
 }
 
-.ad__text {
+.splash__text {
   grid-area: text;
   text-align: center;
 }
