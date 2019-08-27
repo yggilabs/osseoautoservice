@@ -1,7 +1,3 @@
-.markdown-body img {
-  background-color: initial;
-}
-
 :root {
   --env_breakpoint: #{$env_breakpoint}  ;
 
@@ -25,6 +21,30 @@
 
   --table_max-width: calc(100vw - 4 * 64px); /* 64px should actully com from somewhere like --site__main_margin-left, --site__main_margin-right, --site__main_padding-left, --site__main_padding-right */
 
+  /* header */
+  --header_grid-template-rows: auto auto;
+  --header_grid-template-columns: 1fr auto;
+  --header_grid-template-areas:
+    "logo phone"
+    "logo address";
+  
+  /* layout */
+  --site__header_display: initial;
+  --site__splash_display: none;
+  --env_breakpoint: #{$env_breakpoint};
+  
+  /* splash */
+  --splash_grid-template-rows: auto auto;
+  --splash_grid-template-columns: 1fr;
+  --splash_grid-template-areas: "logo" "text"
+  
+  --site_grid-template-rows: 128px auto auto;
+  --site_grid-template-columns: 1fr var(--env_breakpoint) 1fr;
+  --site_grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+  
   /* emojis are 🔥 */
   --a--active__after_content: '!'; /*'🔥'; /* idk whats up with these variable names either */
   --a--active__after_color: var(--color__lowlight);
@@ -45,7 +65,29 @@
     --site__footer_margin: 0 0 128px 0;
     --site__footer_text-align: center;
     --table_max-width: calc(100vw - 2 * 8px);
+    
+    /* header */
+    --header_grid-template-rows: minmax(48px,auto) auto auto;
+    --header_grid-template-columns: 1fr;
+    --header_grid-template-areas:
+      "logo"
+      "phone"
+      "address";
+    
+    /* layout */    
+    --site__header_display: none;
+    --site__splash_display: initial;
+    --site_grid-template-rows: auto auto auto auto;
+    --site_grid-template-columns: 1fr;
+    --site_grid-template-areas:
+      "splash"
+      "main"
+      "footer";
   }
+}
+
+.markdown-body img {
+  background-color: initial;
 }
 
 /* 🌈⛅ */
