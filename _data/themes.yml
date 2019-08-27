@@ -8,7 +8,7 @@
     - '#ffffff' # white
 
     # primary links
-    - '#ffc37f' # light orange # '#eaff7f' # yellow-green
+    - '#ffc37f' # light orange
 
     # rules and nav markers
     - '#ffffff' # green
